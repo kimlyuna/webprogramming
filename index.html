@@ -1,67 +1,144 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>Signin Template · Bootstrap v5.0</title>
+<html>
+    <head>
+        <style type="text/css">
+            div{    
+                margin:20px 10px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <h1>KimRyuna - Web Programming Practice</h1></1>
+        <div>
+        <p>2주차 실습</p>
+        </div>
+        <div>
+        <a href="login.html">Html+css(태그 선택자)</a>
+        </div>
+        <div>
+            <a href="loginid.html">Html+css(아이디 선택자)</a>
+        </div>
+        <div>
+            <a href="loginclass.html">Html+css(클래스 선택자)</a>
+        </div>
+        <div>
+            <a href="bootstrap.html">부트스트랩</a>
+        </div>
+        <div>
+            <a href="table.html">부트스트랩(테이블)</a>
+        </div>
+        <div>
+            <a href="buttons.html">부트스트랩(버튼)</a>
+        </div>
+        <div>
+        <a href="navbar.html">부트스트랩(내비게이션 바)</a>
+        </div>
+        <div>
+        <a href="file:///C:/Users/haruh/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/2024/Web%20Programming%20and%20Practice%20(A)/3%EC%A3%BC%EC%B0%A8/ch2/bootstrap-5.0.2-examples/sign-in/index.html">웹 UI 생성</a>
+        </div>
+        <hr>
+        <div>
+        <p>3주차 실습</p> 
+        </div>
+        <ul>
+            <!--첫 번째 목록-->
+            <li> 
+                <b>글자 태그</b>
+                <ol>
+                    <div>
+                    <a href="text_header.html">제목 표현</a>
+                    </div>
+                    <div>
+                    <a href="text_content.html">제목과 본문 태그의 활용</a>
+                    </div>
+                    <div>
+                    <a href="text_anchor.html">하이퍼링크 설정</a>
+                    </div>
+                    <div>
+                    <a href="text_anchorinner.html">하이퍼링크 설정2</a>
+                    </div>
+                    <div>
+                    <a href="text_font.html">다양한 글자 모양</a>
+                    </div>
+                </ol>
+            </li>
+            <!--두 번째 목록-->  
+            <li>
+                <b>목록 태그</b>
+                <ol>
+                    <div>
+                        <a href="nested_list.html">목록 태그 활용</a>
+                    </div>
+                </ol>
+            </li>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+            <!--세 번째 목록-->  
+            <li>
+                <b>테이블 태그</b>
+                <ol>
+                    <div>
+                        <a href="table_basic.html">시간표 만들기</a>
+                    </div>
+                    <div>
+                            <a href="table_span.html">행, 열 병합 표 생성</a>
+                    </div>
+                </ol>
+            </li>
 
-    
+            <!--네 번째 목록-->  
+            <li>
+                <b>미디어 태그</b>
+                <ol>
+                    <div>
+                        <a href="image_basic.html">멀티미디어 삽입(이미지)</a>
+                    </div>
+                    <div>
+                        <a href="audio_source.html">멀티미디어 삽입(오디오)</a>
+                    </div>
+                    <div>
+                        <a href="video_poster.html">멀티미디어 삽입(비디오)</a>
+                    </div>
+                </ol>
+            </li>
 
-    <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+            <!--다섯 번째 목록-->  
+            <li>
+                <b>입력 양식 태그</b>
+                <ol>
+                    <div>
+                            <a href="form_basic.html">기본 입력 양식 태그</a>
+                    </div>
+                    <div>
+                            <a href="form_radio.html">간단한 입력 양식 생성</a>
+                    </div>
+                    <div>
+                            <a href="form_selectBasic.html">선택 가능한 입력 양식</a>
+                    </div>
+                    <div>
+                            <a href="form_selectGroup.html">선택 가능한 입력 양식(group)</a>
+                    </div>
+                    <div>
+                            <a href="form_group.html">연관 있는 입력 양식 그룹으로 묶기</a>
+                    </div>
+                </ol>
+            </li>
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
-  </head>
-  <body class="text-center">
-    
-<main class="form-signin">
-  <form>
-    <img class="mb-4" src="../assets/brand/door-open.svg" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">로그인</h1>
-
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">이메일, 전화번호</label>
-    </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">비밀번호</label>
-    </div>
-
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> 아이디 기억하기
-      </label>
-    </div>
-    <button class="w-100 btn btn-lg btn-warning" type="submit">로그인</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2023–2050</p>
-  </form>
-</main>
-
-
-    
-  </body>
+            <!--여섯 번째 목록-->  
+            <li>
+                <b>HTML5 문서 구조화</b>
+                <ol>
+                    <div>
+                        <a href="space_block.html">공간 분할 방법(블록)</a>
+                    </div>
+                    <div>
+                        <a href="space_inline.html">공간 분할 방법(인라인)</a>
+                    </div>
+                    <div>
+                        <a href="space_semantic.html">시맨틱 태그를 이용한 레이아웃 구성</a>
+                    </div>
+                </ol>
+            </li>
+        <ul>
+    </body>
 </html>
