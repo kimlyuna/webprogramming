@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글</title>
+    <link rel="stylesheet" href="Bulletin_Artical.css"> <!-- css.css라는 외부 CSS 파일에 연결 -->
+
+</head>
+
+<body style="background-color: #D7EC77;">
+    <div id="container" class="article">
+        <!--list 시작--> 
+        <div class="wrap_articles"> 
+            <article class="list">
+                <a class="article" href="#">
+                    <div class="desc">
+                        <h2 class="large">오늘 제 점심 어떤가요</h2> 
+                        <h2 class="medium_bold">식단공유<span class="time">24/04/16 23:19</span><span class="dot"> • </span><span class="commenttop">3</span></h2>
+                        <div class="medium">
+                            <div class="first-part">식단은 처음 해봐서 어떤지 잘 모르겠네요ㅎㅎ</div><br>
+                            <div class="second-part">평가 부탁드립니다ㅜㅜ</div>
+                        </div>
+                        <div class="attachthumbnail" style="background-image: url('Bulletin_Artical/food.png');"></div>
+                        <div class="info">
+                            <ul class="status">
+                                <li title="댓글" class="commentcount">댓글 3개</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>   
+            </article>
+
+        <div class="comment-form">
+            <textarea class="comment-input" placeholder="댓글을 입력해주세요"></textarea>
+            <button class="comment-submit"></button>
+        </div>
+            
+        <hr> <!--구분선1 -->
+
+    <!--댓글란 -->
+            <article class="list">
+                <a class="article" href="#">
+                    <div class="desc">
+                       <h2 class="small_bold">익명1<span class="time">24/04/16 23:20</span></h2>
+                        <div class="comment_part">괜찮은 식단 같습니다</div>
+                    </div>
+                    <h2 class="medium_bold"><span class="commentbottom">1</span></h2>
+                </a>
+            </article>
+                <hr> <!--구분선2 -->        
+
+    <!--댓글 답글란 -->
+    <article class="list">
+        <span class="responseicon"></span>
+        <a class="article-second" href="#">
+            <div class="desc">
+               <h2 class="small_bold">글쓴이<span class="time">24/04/16 23:20</span></h2>
+                <div class="comment_part">답변 감사합니다!</div>
+            </div>
+            <h2 class="medium_bold"><span class="commentbottom">0</span></h2>
+        </a>
+    </article>
+        <hr> <!--구분선3 -->  
+
+    <!--댓글란 -->
+    <article class="list">
+        <a class="article" href="#">
+            <div class="desc">
+               <h2 class="small_bold">익명2<span class="time">24/04/16 23:20</span></h2>
+                <div class="comment_part">괜찮은 식단 같습니다</div>
+            </div>
+            <h2 class="medium_bold"><span class="commentbottom">1</span></h2>
+        </a>
+    </article>
+        <hr> <!--구분선2 -->  
+
+        <!-- 새로운 폼 -->
+        <div class="commentnew-form">
+            <textarea class="commentnew-input" placeholder="댓글을 입력해주세요"></textarea>
+            <button class="commentnew-submit">댓글 남기기</button>
+        </div>
+
+        </div><!--wrap_articles -->
+    </div><!--container 닫기-->
+</body>
+</html>

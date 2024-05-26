@@ -1,0 +1,211 @@
+/* reset.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900');
+
+
+* {box-sizing:border-box;}
+html,body,h1,h2,h3,h4,h5,h6,ul,iol,li,a,img,p,div,
+header,nav,main,article,aside, section,footer,address,
+table,tr,td,th, del,span,em,strong,sup,sub, dl,dt,dd,
+form, fieldset,legend,input,label,select,option,button {
+    margin:0;padding:0;
+    font-family: 'Noto Sans KR';
+    font-weight: noraml; font-style: normal;
+    font-size: 1.0rem; line-height: 1.0;letter-spacing: 0em;
+}
+
+fieldset {border: 0;}
+legend {display: none;}
+button {border: 0; background: none; cursor: pointer;}
+input {border: 0;}
+ul, ol, li {list-style-type:none;}
+.skip{display:none;}
+table, tr, td, th {border-collapse:collapse;}
+
+:root {
+    --main_green: #D7EC77;
+    --sub_orange: #FF6E40;
+    --white: #fff;
+    --text_color: #564363;
+    --border_gray: #E4E4E4;
+    --guide_text:#ADADAD;
+}
+
+body {
+    background-color:var(--main_green);
+}
+
+
+#container {
+    width: 750px;
+    height: 1300px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 50px 80px 0px 80px;
+    margin-top: 100px;
+}
+
+.wrap_title {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.wrap_title strong {
+    font-size: 40px;
+    color: var(--text_color);
+}
+
+
+/* style.css */
+.table tbody td {
+    background-color: var(--white); /* White background color for body cells */
+    border: none; /* Remove border from body cells */
+    padding: 10px; /* Add padding to body cells */
+    border-radius: 5px; /* Add border radius to body cells */
+}
+
+.table tbody td a {
+    display: block; /* Display links as block elements */
+    color: #007bff; /* Blue link color */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Smooth transition for link color */
+}
+
+.table tbody td a:hover {
+    color: #0056b3; /* Darker blue link color on hover */
+}
+
+
+.filter-button {
+    width:40px;
+    height:30px;
+    background-color: #CCCCCC;
+    border-radius: 60px;
+    padding: 7px 15px 7px 15px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text_color);
+    background-color: var(--border_gray);
+    margin-right: 7px;
+}
+.filter-button:hover {
+    background-color:var(--sub_orange); /* Darker blue background color on hover */
+    color: var(--white);
+}
+
+
+.col-auto {
+    flex: 0 0 auto;
+    width: auto;
+    padding-left: 0px;
+}
+
+
+.category {
+    display: inline-block; /* 제목과 날짜를 한 줄에 표시 */
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--text_color);
+    display: inline-block;
+}
+
+.date {
+    display: inline-block; /* 제목과 날짜를 한 줄에 표시 */
+    font-size: 12px;
+    margin-left: 5px;
+    color: var(--guide_text);
+}
+
+.date::before {
+    content: " • "!important;
+    margin-right: 2px;
+
+}
+
+.link {
+    margin-top: 10px;
+    font-size: 14px!important;
+    text-decoration: none !important;/* 밑줄 제거 */
+    color: var(--text_color)!important; /* 기본 검정색 */
+    text-align: left;
+}
+
+
+
+.enter {
+    border: none;
+    border-radius: 50%;
+    background-color: var(--text_color);
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+    font-size: 55px;
+    line-height: 40px;
+    text-align: center;
+    outline: none;
+    top: 169px;
+    right: 21px;
+    position: relative;
+}
+.enter:hover {
+    background-color: var(--text_color); /* hover 시 배경색 유지 */
+}
+
+.enter::before {
+    content: '+';
+    position: absolute;
+    top: 46%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    font-weight: 500;
+}
+
+.delete {
+    float: right;
+    margin-right: 10px;
+  }
+
+
+tr {
+    border-bottom: 1px solid var(--border_gray);; /* 구분선 색상 및 두께 지정 */
+}
+
+
+
+
+
+/* 스타일 변경 */
+.table tbody td {
+    background-color: var(--white);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: auto; /* 셀의 너비를 자동으로 조정 */
+    max-width: 400px; /* 최대 너비 지정 */
+    white-space: nowrap; /* 긴 내용을 줄바꿈하지 않고 한 줄로 표시 */
+    overflow: hidden; /* 넘치는 내용은 숨김 */
+    text-overflow: ellipsis; /* 넘치는 내용은 생략 부호로 표시 */
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    /* 화면 크기가 작아질 때 적용되는 스타일 */
+    #container {
+        width: auto; /* 컨테이너의 너비를 자동으로 조정 */
+        padding: 50px 20px; /* 패딩을 줄임 */
+    }
+
+    .table tbody td {
+        max-width: none; /* 최대 너비 해제 */
+        white-space: normal; /* 줄바꿈을 허용 */
+        text-overflow: initial; /* 생략 부호 제거 */
+    }
+}

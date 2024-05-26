@@ -1,0 +1,197 @@
+
+/*notosans 글씨체에 여러 가지 굵기옵션 가져오기*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900');
+
+
+
+* {box-sizing:border-box;}
+html,body,h1,h2,h3,h4,h5,h6,ul,iol,li,a,img,p,div,
+header,nav,main,article,aside, section,footer,address,
+table,tr,td,th, del,span,em,strong,sup,sub, dl,dt,dd,
+form, fieldset,legend,input,label,select,option,button {
+    margin:0;padding:0;
+    font-family: 'Noto Sans KR';
+    font-weight: noraml; font-style: normal;
+    font-size: 1.0rem; line-height: 1.0;letter-spacing: 0em;
+}
+
+fieldset {border: 0;}
+legend {display: none;}
+button {border: 0; background: none; cursor: pointer;}
+input {border: 0;}
+ul, ol, li {list-style-type:none;}
+.skip{display:none;}
+table, tr, td, th {border-collapse:collapse;}
+
+
+:root {
+    --main_green: #D7EC77;
+    --sub_orange: #FF6E40;
+    --white: #fff;
+    --text_color: #564363;
+    --border_gray: #E4E4E4;
+    --guide_text:#ADADAD;
+}
+
+#container {
+    width: 750px;
+    height: 1300px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 50px 80px 0px 80px;
+    margin-top: 100px;
+}
+.wrap_title{
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.wrap_title strong{
+    font-size:40px;
+    color: var(--text_color);
+}
+
+.desc {
+    padding: 10px 0px 0px 20px;
+}
+
+.desc hr {
+    border: none; /* 기본 테두리 제거 */
+    border-top: 1px solid #ccc; /* 원하는 두께의 테두리 색상 설정 */
+    margin-top: 10px; /* 테두리 위 여백 설정 */
+    margin-bottom: 10px; /* 테두리 아래 여백 설정 */
+}
+
+
+.wrap_articles {
+    margin-bottom: 20px;
+}.article {
+    text-decoration: none;
+    color: #333;
+}
+
+.medium {
+    font-size: 14px;
+}
+
+.medium_bold {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color:var(--text_color);
+}
+
+.time::before {
+    content: " • ";
+    margin-right: 5px;
+}
+
+.time {
+    font-size: 12px;
+    margin-left: 5px;
+    color:var(--guide_text);
+}
+
+.info {
+    display: inline-flex;
+    line-height: 18px;
+}
+
+.status {
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.status li.comment {
+    padding: 9px 0px 0px 0px;
+    color: var(--guide_text);
+    margin-bottom: 2px;
+}
+
+
+.status li.comment::after {
+    content: '1';
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 2px;
+    position: relative;
+    top: -3px;
+}
+
+
+.status li::before {
+    content: '';
+    display: inline-block;
+    background-image: url(icon.png);
+    width: 16px; height: 16px;
+    background-size: cover;
+
+    
+}
+
+.attachthumbnail {
+    width: 70px; height: 70px;
+    float: right;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 10px;
+    margin-top: -50px;
+    margin-right: 25px;
+}
+
+
+/*상단 주제 버튼*/
+.button_subject {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+.button_subject button {
+    background-color: #CCCCCC;
+    border-radius: 60px;
+    padding: 7px 15px 7px 15px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text_color);
+    background-color: var(--border_gray);
+    margin-right: 7px;
+}
+
+
+hr {
+    border: 1px solid var(--border_gray);
+}
+
+
+/*하단 플러스 버튼*/
+
+
+.button-container {
+    
+    position: fixed;
+    bottom: 417px;
+    right: 377px;
+    z-index: 999;
+    background-attachment: fixed;
+    
+}
+
+.create-post-button {
+    background-color: purple;
+    border-radius: 50%; /* 동그라미 모양을 만들기 위해 반지름 설정 */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus-icon {
+    color:white;
+    font-size: 50px; /* 플러스 모양의 크기를 조절합니다. */
+    font-weight: 600; /* 플러스 모양의 두께를 조절합니다. */
+}

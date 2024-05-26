@@ -1,0 +1,96 @@
+/* reset.css 부분 */
+/*notosans 글씨체에 여러 가지 굵기옵션 가져오기*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900');
+* {box-sizing:border-box;}
+html,body,h1,h2,h3,h4,h5,h6,ul,iol,li,a,img,p,div,
+header,nav,main,article,aside, section,footer,address,
+table,tr,td,th, del,span,em,strong,sup,sub, dl,dt,dd,
+form, fieldset,legend,input,label,select,option,button {
+    margin:0;padding:0;
+    font-family: 'Noto Sans KR';
+    font-weight: noraml; font-style: normal;
+    font-size: 1.0rem; line-height: 1.0;letter-spacing: 0em;
+}
+
+table, tr, td, th {border-collapse:collapse;}
+ul, ol, li {list-style-type:none;}
+a {text-decoration:none; color:#000;}
+button {cursor:pointer; border:0; background:none;}
+textarea {resize:none;border:0;}
+fieldset {border:0;}
+.skip{display:none;}
+
+/*design.css 부분*/
+:root {
+    --main_green: #D7EC77;
+    --sub_orange: #FF6E40;
+    --white: #fff;
+    --text_color: #564363;
+    --border_gray: #E4E4E4;
+    --guide_text:#ADADAD;
+}
+
+body {
+    width: 90%; /* 전체 요소의 너비를 90%로 설정합니다. */
+    margin: 0 auto; /* 가운데 정렬을 위해 왼쪽과 오른쪽 여백을 자동으로 설정합니다. */
+    /*팔레트*/
+
+}
+
+h1 {text-align:center; margin:120px auto 42px;}
+h1 img {}
+main {width:370px; margin:0 auto;}
+main #loginFrm {}
+main #loginFrm fieldset {}
+main #loginFrm fieldset ul {}
+main #loginFrm fieldset ul li {
+    background-color: var(--white);
+    display:flex; flex-flow:row nowrap;
+    /*아이디 입력란과 비번 입력란 사이에 margin*/
+    margin-bottom: 14px;
+    border:0;
+    
+}
+main #loginFrm fieldset ul li span input{ 
+    /*input란 크기 지정*/ width:370px; height:43px; border:0px; padding-left:12px; }
+main #loginFrm fieldset ul li span input::placeholder{
+    /*input란 글씨만 따로 지정*/font-size:1rem; color:var(--guide_text);font-weight: 500;}
+
+main #loginFrm fieldset ul li span input[name=userid] {}
+main #loginFrm fieldset ul li span input[name=userpw] {}
+main #loginFrm fieldset .btm {
+    /*정렬방향 일자로*/
+    display:flex; flex-flow:row nowrap;
+    /*양옆으로 보내버리기*/
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 26px;
+    padding-left: 0px;
+    justify-content: space-between;
+    font-size:1rem;
+    font-weight: 500;
+    color:var(--text_color);
+
+}
+main #loginFrm fieldset .btm p {}
+main #loginFrm fieldset .btm p label input[name=login_keep]{}
+main #loginFrm fieldset .btm p label input span {}
+main #loginFrm fieldset .btm .idpw_search { color:var(--text_color);}
+main #loginFrm fieldset #login_btn {
+    background-color: var(--text_color);
+    width:100%;  color:var(--white);
+    padding:14.5px 0;
+    font-size:1.6rem; font-weight: 500;
+    border-radius: 15px;
+
+}
+main .last p {
+    color:var(--white);
+    font-size:1rem; font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main .last p .join_link {
+    color:var(--text_color);
+}

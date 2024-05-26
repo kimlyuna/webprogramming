@@ -1,0 +1,130 @@
+/* reset.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900');
+
+
+* {box-sizing:border-box;}
+html,body,h1,h2,h3,h4,h5,h6,ul,iol,li,a,img,p,div,
+header,nav,main,article,aside, section,footer,address,
+table,tr,td,th, del,span,em,strong,sup,sub, dl,dt,dd,
+form, fieldset,legend,input,label,select,option,button {
+    margin:0;padding:0;
+    font-family: 'Noto Sans KR';
+    font-weight: noraml; font-style: normal;
+    font-size: 1.0rem; line-height: 1.0;letter-spacing: 0em;
+}
+
+fieldset {border: 0;}
+legend {display: none;}
+button {border: 0; background: none; cursor: pointer;}
+input {border: 0;}
+ul, ol, li {list-style-type:none;}
+.skip{display:none;}
+table, tr, td, th {border-collapse:collapse;}
+
+:root {
+    --main_green: #D7EC77;
+    --sub_orange: #FF6E40;
+    --white: #fff;
+    --text_color: #564363;
+    --border_gray: #E4E4E4;
+    --guide_text:#ADADAD;
+}
+
+body {
+    background-color:var(--main_green);
+}
+
+.container {
+    width: 750px;
+    height: 1300px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 50px 80px 0px 80px;
+    margin-top: 100px;
+}
+
+.card {
+    border: 0;    
+    width: 130%;
+    height: 130%;
+    margin-top: -50px;
+    margin-left: -85px;
+    --bs-card-border-color: rgba(0, 0, 0, 0);
+}
+.link {
+    position: relative; /* 부모 요소인 링크의 위치를 설정하기 위해 필요함 */
+}
+
+.link .icon::before {
+    content: '◀'; /* 화살표 모양 */
+    position: absolute; /* 절대 위치로 설정 */
+    top: -338px;
+    right: -20px;
+    margin-right: 8px; /* 화살표와 텍스트 사이의 간격 */
+    display: inline-block; /* 인라인 블록으로 설정 */
+    text-decoration: none; /* 가상 요소에 밑줄 제거 */
+    color: var(--guide_text);
+    font-size: 20px;
+}
+
+.link .icon:hover::before {
+    color: var(--text_color); /* 호버 시 아이콘 색상 변경 */
+}
+
+.card-header {
+    padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+    margin-bottom: 0;
+    color: var(--bs-card-cap-color);
+    background-color: transparent; /* 배경색을 투명하게 설정 */    
+    border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    text-decoration: none;
+
+}
+
+
+.card-body{
+    margin-left: 30px;
+}
+
+
+
+.date::before {
+    content: " • "!important;
+    margin-right: 2px;
+    
+
+}
+
+
+/* 유동적 코드로 변환 */
+.category {
+    margin-left: 11.5%; /* 카테고리의 좌측 여백 조정 */
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: 13px;
+    color: var(--text_color);
+}
+
+.date {
+    margin-left: 1%; /* 날짜의 좌측 여백 조정 */
+    font-size: 13px;
+    color: var(--guide_text);
+    font-weight: 200;
+}
+
+.card-title {
+    font-size: 20px;
+    FONT-WEIGHT: 600;
+    color: var(--text_color);
+    margin-left: 15%; /* 제목의 좌측 여백 조정 */
+    margin-top: 45px;
+}
+
+.card-text {
+    margin-left: 11.5%; /* 카드 내에서의 좌측 여백 조정 */
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color:var(--text_color);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="new_ exerciseStyle_page.css">
+    <script src="script.js"></script>
+</head>
+
+<body style="background-color: #D7EC77;">
+    <div id="join">
+        <h1>회원가입</h1>
+        <h1><span id="span_basic">기본 정보</span><span id="span_body">신체 정보</span><span id="span_style">운동 스타일</span><span id="span_plan">추천 계획</span></h1>
+        <form action="#" method="post" id="basicInfo_frm">
+            <fieldset>
+                <legend>기본정보입력</legend>
+                <h1>적절한 운동추천을 위한 </h1>
+                <h1><span class="keyword">운동 스타일</span>을 알려주세요</h1><br>
+                <label for="user_exerciselevel">운동 수준</label>
+
+                <div class="btn-container">
+                    <input type="radio" id="beginner" name="exerciseLevel" value="beginner">
+                    <label for="beginner">입문<span>운동 자세, 루틴 등 아무것도 몰라요</span></label>
+                    
+                    <input type="radio" id="intermediate" name="exerciseLevel" value="intermediate">
+                    <label for="intermediate">초급<span>자세는 조금 알지만 무슨 운동을 해야 할지 몰라요</span></label>
+                    
+                    <input type="radio" id="advanced" name="exerciseLevel" value="advanced">
+                    <label for="advanced">중급<span>운동 자세를 잘 알고, 나만의 루틴이 있어요</span></label>
+                    
+                    <input type="radio" id="expert" name="exerciseLevel" value="expert">
+                    <label for="expert">고급<span>운동을 직업으로 삼을 만큼의 지식이 있어요</span></label>
+
+                    <input type="radio" id="pro" name="exerciseLevel" value="pro">
+                    <label for="pro">전문<span>운동 선수급의 지식과 경험이 있어요</span></label>
+                </div>
+
+                <label for="user_exercisepurpose">운동 목적</label>
+                <div class="btn-container">
+                    <input type="radio" id="weight_loss" name="exercisePurpose" value="weight_loss">
+                    <label for="weight_loss">체중 감량</label>
+                    
+                    <input type="radio" id="endurance_increase" name="exercisePurpose" value="endurance_increase">
+                    <label for="endurance_increase">체력 향상</label>
+                    
+                    <input type="radio" id="muscle_gain" name="exercisePurpose" value="muscle_gain">
+                    <label for="muscle_gain">근육량 증가</label>
+                    
+                    <input type="radio" id="other" name="exercisePurpose" value="other">
+                    <label for="other">기타</label>
+                </div>
+                
+                <div class="bottom">
+                    <button type="button" id="next_btn">다음</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

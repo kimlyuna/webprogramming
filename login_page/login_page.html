@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--언어 한국어 설정-->
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>두근득근 (헬스 기록 웹사이트)</title>
+
+
+    <!--두 개의 CSS 파일과 하나의 JavaScript 파일을 로드-->
+    <!-- 외부 CSS 파일을 HTML 문서에 연결 "resetpage.css"라는 파일을 연결(페이지 reset)-->
+    <!-- "style.css"라는 파일을 연결(페이지의 스타일 및 디자인 설정)-->
+    <link rel="stylesheet" href = "login_page.css"> 
+    <!-- <script> 요소는 외부 JavaScript 파일을 HTML 문서에 연결. 동적 행동 할당 가능 -->
+    <script src = "script.js"></script>
+
+
+</head>
+
+<!--웹사이트 배경색 연두로 설정-->
+<body style="background-color: #D7EC77;">
+ 
+
+<!--센터에 위치한 캐릭터 로드-->
+    <h1><img src="login_page.png" alt="두부캐릭터"></h1>
+
+<!--본격적인 메인 코드 시작-->
+    <main>
+        <!--form으로 사용자 입력받기, post로 로그인 정보 노출하지 않고 제출, id는 로그인폼으로 지정 -->
+        <form action="#" method="post" id="loginFrm">
+            <!--fieldset으로 관련된 폼 요소를 그룹화하기 -->
+            <fieldset>
+                <!-- 사용자에게 폼의 목적을 알려주어 접근성 향상 -->
+                <legend class="skip">로그인 양식</legend>
+
+                <!-- 아이디/비번 입력창 -->
+                <ul>
+                    <li>
+                        <span><input type="text" name="userid" placeholder="아이디를 입력하세요."></span>
+                    </li>
+                    <li>
+                        <span><input type="password" name="userpw" placeholder="비밀번호를 입력하세요."></span>
+                    </li>
+                </ul>
+
+                <!-- 로그인 폼의 하단부분 btm이라는 class로 묶어줌 -->
+                <div class="btm">
+                    <p>
+                        <label>
+                            <input type="checkbox" name="login_keep" id="login_keep">
+                            <span>로그인 유지</span>
+                        </label>
+                    </p>
+                    <a href="#" class="idpw_search">아이디/비밀번호 찾기</a>
+                </div>
+                <button type="submit" id="login_btn">로그인</button>
+                
+            </fieldset>
+        </form>
+        <div class="last">
+            <p>회원이 아니신가요?&nbsp; <button id="signup_btn" class="join_btn">회원가입</button></p>
+        </div>
+    </main>
+</body>
+</html>

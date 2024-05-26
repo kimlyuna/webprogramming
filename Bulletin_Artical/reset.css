@@ -1,0 +1,24 @@
+
+/*notosans 글씨체에 여러 가지 굵기옵션 가져오기*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900');
+
+
+
+* {box-sizing:border-box;}
+html,body,h1,h2,h3,h4,h5,h6,ul,iol,li,a,img,p,div,
+header,nav,main,article,aside, section,footer,address,
+table,tr,td,th, del,span,em,strong,sup,sub, dl,dt,dd,
+form, fieldset,legend,input,label,select,option,button {
+    margin:0;padding:0;
+    font-family: 'Noto Sans KR';
+    font-weight: noraml; font-style: normal;
+    font-size: 1.0rem; line-height: 1.0;letter-spacing: 0em;
+}
+
+fieldset {border: 0;}
+legend {display: none;}
+button {border: 0; background: none; cursor: pointer;}
+input {border: 0;}
+ul, ol, li {list-style-type:none;}
+.skip{display:none;}
+table, tr, td, th {border-collapse:collapse;}

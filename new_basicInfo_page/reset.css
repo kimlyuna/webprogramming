@@ -1,0 +1,11 @@
+* {box-sizing: border-box;}
+html, body, div, h1, form, fieldset, legend, ul, label, li, input, button, img {
+    margin: 0; padding: 0;
+    font-size: 1.0rem; font-weight: normal; font-style: normal;
+    line-height: 1.0;
+}
+fieldset {border: 0;}
+legend {display: none;}
+button {border: 0; background: none; cursor: pointer;}
+input {border: 0;}
+ul, li {list-style: none;}
